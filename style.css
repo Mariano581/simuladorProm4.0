@@ -1,0 +1,232 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eadbdbd5; /* Color de fondo */
+    margin: 22px;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+h1 {
+    background-color: #2e2481;
+    color: #C7FB93;
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del subencabezado "INGRESO DE DATOS" */
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos del formulario y caja de entrada */
+#formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 60px;
+    border: 1px solid #ccc;
+    background-color: #ffffff; /* Fondo del contenedor del formulario */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#cargarAlumno {
+    background-color: #2e2481;
+    color: #C7FB93;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#cargarAlumno:hover {
+    background-color: #C7FB93;
+    color: #2e2481;
+}
+
+/* Estilos de mensajes de aviso */
+#avisoError {
+    color: red;
+    margin-top: 20px;
+}
+
+#avisoOk {
+    color: green;
+    margin-top: 20px;
+}
+
+/* Estilos de la tabla de resultados */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-top: 2px solid #ccc; /* Línea separadora en la parte superior de la tabla */
+}
+
+table {
+    width: 100%;
+}
+
+.thNombre,
+.thApellido,
+.thPromedio {
+    text-align: center;
+    padding: 10px;
+    background-color: #2e2481;
+    color: #C7FB93;
+}
+
+/* Ajusta el color de fondo del promedio */
+.thPromedio {
+    background-color: #C7FB93;
+    color: #2e2481;
+}
+
+.divFilas {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; /* Añade más espacio entre las filas */
+}
+
+/* Estilos de la sección de búsqueda por apellido */
+.divBuscarApellido {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+input#inputBuscarApellido {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botonBuscar {
+    background-color: #2e2481;
+    color: #C7FB93;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botonBuscar:hover {
+    background-color: #C7FB93;
+    color: #2e2481;
+}
+
+/* Estilos de la sección de alumnos aprobados y desaprobados */
+.divAprobadosYdesaprobados {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 555px;
+    margin-top: 40px; /* Aumenta la separación entre los grupos de aprobados y desaprobados */
+}
+
+.divAprobados,
+.divDesaprobados {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.divAprobados input,
+.divDesaprobados input {
+    width: 100%;
+    background-color: #2e2481;
+    color: #C7FB93;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.divAprobados input:hover,
+.divDesaprobados input:hover {
+    background-color: #C7FB93;
+    color: #2e2481;
+}
+
+/* Estilos para el encabezado "Hola Profe!" */
+h2 {
+    font-size: 32px;
+    margin-top: 20px;
+    color: #2e2481;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el botón "Guardar Nombre" */
+#guardarNombre {
+    background-color: #2e2481;
+    color: #C7FB93;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#guardarNombre:hover {
+    background-color: #C7FB93;
+    color: #2e2481;
+}
+
+/* Estilo para el botón "Activar/Desactivar Avisos" */
+.botonPopUp input[type="button"] {
+    background-color: #2e2481;
+    color: #C7FB93;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botonPopUp input[type="button"]:hover {
+    background-color: #C7FB93;
+    color: #2e2481;
+}
+
+/* Estilo para el botón "Listar / Ocultar Directivos (servidor)" */
+.botonAjax {
+    background-color: #2e2481;
+    color: #C7FB93;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botonAjax:hover {
+    background-color: #C7FB93;
+    color: #2e2481;
+}
