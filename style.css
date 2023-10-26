@@ -143,13 +143,13 @@ input#inputBuscarApellido {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 555px;
+    max-width: 500px;
     margin-top: 40px; /* Aumenta la separación entre los grupos de aprobados y desaprobados */
 }
 
 .divAprobados,
 .divDesaprobados {
-    width: 48%;
+    width: 84%;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #ffffff;
@@ -166,7 +166,7 @@ input#inputBuscarApellido {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .divAprobados input:hover,
@@ -221,7 +221,7 @@ h2 {
     background-color: #2e2481;
     color: #C7FB93;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 140px;
     border-radius: 5px;
     cursor: pointer;
 }
