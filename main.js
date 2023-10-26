@@ -1,6 +1,5 @@
 // entrega final
 
-
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
@@ -35,7 +34,6 @@ obtenerLocalStorage();
 
 function obtenerLocalStorage() {
     if (localStorage.getItem("nombre") === "null") {
-        // No es necesario llamar guardarLocal aquí.
     } else {
         let nomb = localStorage.getItem("nombre");
         let ses = localStorage.getItem("ultima_Sesion");
@@ -53,7 +51,6 @@ function borrarLocal() {
 function guardarLocal() {
     const nombreInput = document.getElementById("nombreProfesor");
     const nProfe = nombreInput.value;
-    
     if (nProfe) {
         let now = new Date();
         let usuario = [{
@@ -69,7 +66,7 @@ function guardarLocal() {
         console.log(localStorage.getItem("nombre"));
         console.log(localStorage.getItem("ultima_Sesion"));
         console.log(JSON.stringify(usuario));
-        
+
         // Actualiza el nombre en la bienvenida
         document.getElementById("spanProfe").innerHTML = nProfe;
     } else {
@@ -115,7 +112,7 @@ function AvisoFeriado() {
     } = Swal.fire({
         icon: 'info',
         title: 'ATENCION',
-        text: 'El próximo 24/3/2023 no habrá clases por feriado Nacional',
+        text: 'El próximo 20 de Noviembre de 2023 no habrá clases por feriado Nacional',
         input: 'checkbox',
         inputValue: 0,
         inputPlaceholder: 'No mostrar más este mensaje',
@@ -193,7 +190,6 @@ const validarFormulario = (e) => {
     }
 }
 inputs.forEach((input) => {
-    //input.addEventListener('keyup', ()=>{ console.log("tecla levantada")});
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
 });
@@ -397,7 +393,7 @@ function funcionCargar() {
         removerEstilos();
         todoBien = false;
         document.getElementById("avisoOk").innerHTML = null;
-        document.getElementById("avisoError").innerHTML = "Error! Elementos no enviados X";
+        document.getElementById("avisoError").innerHTML = "Error! Elementos no enviados";
     }
 }
 let mostrarA = 0;
@@ -448,7 +444,6 @@ function directivo() {
                 console.log(usuarios);
                 usuarios.map((user, i) => {
                     let nombre = document.createElement("p");
-                    // nombre.innerHTML ="ID: "+ i + " NOMBRE: " + user.first_name + " APELLIDO: "+ user.last_name+" CORREO: " + user.email;
                     nombre.innerHTML = `
                 <h4><i>LEGAJO: ${i}</i></h4>
                 <p></i>Nombre y apellido:</i><STRONG> ${user.first_name} ${user.last_name}</STRONG> <i>- Correo: </i><STRONG>${user.email}</STRONG> </p>
